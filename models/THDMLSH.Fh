@@ -1,0 +1,14 @@
+* model_thdmlsh.h
+* declarations for model_THDMLSH.F
+* this file is part of FormCalc
+* last modified 7 Jun 13 th
+
+#ifndef THDMLSH_fh
+#define THDMLSH_h
+
+c#include "model_sm.h"
+	RealType Masshh(3), MassAh(3), MassFv(9), MassFe(3), MassFu(3), MassFd(3),  MassHm(2) MassVZ, MassVWm,
+	RealType Lam1, Lam2, Lam3, Lam4, Lam5, Lam6, Lam7
+	RealType M12S, M1S, M2S
+
+#endif
