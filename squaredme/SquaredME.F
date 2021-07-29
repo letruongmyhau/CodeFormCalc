@@ -109,7 +109,7 @@
 * BEGIN M2_LOOP
 	amp = 0
 	amp = amp + Cloop(1)
-	ampsq = ampsq + Re(amp*Conjugate(Cloop(1)))
+
 * END M2_LOOP
 	ENDTEST(flags, BIT_LOOP)
 	res(HelAll(2)) = ampsq
