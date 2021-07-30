@@ -6,9 +6,30 @@
 #ifndef THDMLSH_fh
 #define THDMLSH_h
 
-c#include "model_sm.h"
+#ifndef CKMC
+#define CKMC(i,j) Conjugate(CKM(i,j))
+#endif
+
+	RealType CKMlambda, CKMA, CKMrhobar, CKMetabar
+	parameter (CKMlambda = .22535D0)
+	parameter (CKMA = .811D0)
+	parameter (CKMrhobar = .131D0)
+	parameter (CKMetabar = .345D0)
+
+c#include "SM.Fh"
+*Mass of Gauge boson
 	RealType Masshh(3), MassAh(3), MassFv(9), MassFe(3), MassFu(3), MassFd(3),  MassHm(2) MassVZ, MassVWm,
-	RealType Lam1, Lam2, Lam3, Lam4, Lam5, Lam6, Lam7
+    RealType CW, CW2, SW2
+	parameter (MassVZ = 91.1876D0)
+	parameter (MassVWm = 80.385D0)
+	parameter (CW = MW/MZ, CW2 = CW**2)
+	parameter (SW2 = (1 - CW)*(1 + CW))
+*Yukawa coupling
+	RealType Lam1, Lam2, Lam3, Lam4, Lam5, Lam6, Lam7, Lam1S, Lam2S, Lam12S 
 	RealType M12S, M1S, M2S
+*Coupling
+    RealType g1, g2, g3, e
+*VEV
+	RealType v1 
 
 #endif
