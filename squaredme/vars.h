@@ -14,7 +14,8 @@
 
 c#else
 
-#include "decl.h"
+c#include "decl.h"
+
 
 	ComplexType B0i1(Nbb,2,2), B0i2(Nbb,2,2), B0i3(Nbb,2,2)
 	ComplexType B0i4(Nbb,2), B0i5(Nbb), B0i6(Nbb,2)
@@ -1467,6 +1468,9 @@ c#else
 
 	integer I2G4, I2G5, I2G6, I3G4, I3G5, I3G6, I9G4, I9G5, I9G6
 	integer Ind1, Ind2, Ind3, Ind4, Ind5, Ind6
+*	not know size of Nbb, Ncc 
+       integer Nbb, Ncc
+	parameter(Nbb = 3, Ncc = 3)
 	common /indices/ I2G4, I2G5, I2G6, I3G4, I3G5, I3G6, I9G4
 	common /indices/ I9G5, I9G6, Ind1, Ind2, Ind3, Ind4, Ind5
 	common /indices/ Ind6

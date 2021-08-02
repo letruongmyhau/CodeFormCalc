@@ -4,7 +4,7 @@
 * last modified 7 Jun 13 th
 
 #ifndef THDMLSH_fh
-#define THDMLSH_h
+#define THDMLSH_fh
 
 #ifndef CKMC
 #define CKMC(i,j) Conjugate(CKM(i,j))

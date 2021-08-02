@@ -13,7 +13,7 @@
 c#define SAMURAI
 c#define CUTTOOLS
 
-#else
+c#else
 * declarations for every subroutine
 
 c#include "opp.h"
